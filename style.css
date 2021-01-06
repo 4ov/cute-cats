@@ -51,6 +51,7 @@ div img:hover{
   color: white;
   border-radius: 9999px;
   position: absolute;
-  bottom: -20%;
+  bottom: -4rem;
   left: 0;
+  cursor: pointer;
 }

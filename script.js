@@ -1,20 +1,26 @@
+/**@jsx h */
+import "babel-core/register"
+import "babel-polyfill"
+import {h, render} from 'preact' 
+import App from './App'
 
-function get(){
- fetch('https://api.thecatapi.com/v1/images/search').then(res => res.json()).then(res =>{
-  document.querySelector('img').src = res[0].url
-})
- }
+
+render(<App />, document.body)
+
+
+
+
+
  
  
-get()
+// get()
 
 
-document.querySelector('#next').addEventListener('click',ev=>{
-  alert('oo')
-  get()
-})
+// document.querySelector('#next').addEventListener('click',ev=>{
+//   get()
+// })
 
 
-//fetch('https://dog.ceo/api/breeds/image/random').then(res=>res.json()).then(res=>{
- // document.querySelector('img').src = res.message
-//})
+// fetch('https://dog.ceo/api/breeds/image/random').then(res=>res.json()).then(res=>{
+//  document.querySelector('img').src = res.message
+// })
